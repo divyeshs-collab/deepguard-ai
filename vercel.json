@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/frontend/static/$1"
+    },
+    {
+      "src": "/api/model/metrics",
+      "dest": "/ml/evaluation/metrics.json"
+    },
+    {
+      "src": "/api/model/info",
+      "dest": "/ml/model/metadata.json"
+    },
+    {
+      "src": "/api/model/evaluation-asset/(.*)",
+      "dest": "/ml/evaluation/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/static/index.html"
+    }
+  ]
+}

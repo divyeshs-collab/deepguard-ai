@@ -1,0 +1,8 @@
+{
+  "method": "Temperature Scaling",
+  "temperature": 0.5,
+  "platt_a": 1.0,
+  "platt_b": 0.0,
+  "description": "Temperature Scaling probability calibration on held-out validation set.",
+  "ui_label": "Model Confidence"
+}

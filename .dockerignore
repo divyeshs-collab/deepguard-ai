@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+.env
+node_modules
+.DS_Store
+*.log
+ml/dataset/real/*.wav
+ml/dataset/synthetic/*.wav
+uploads/*

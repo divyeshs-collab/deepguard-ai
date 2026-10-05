@@ -1,0 +1,35 @@
+{
+  "evaluation_timestamp": "2026-10-05 12:55:40",
+  "dataset_split": "Independent Test Set (Unseen Speakers)",
+  "test_sample_count": 48,
+  "real_samples": 24,
+  "synthetic_samples": 24,
+  "classification_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 0.5,
+    "equal_error_rate_eer": 0.0,
+    "eer_threshold": 0.002,
+    "false_positive_rate_fpr": 0.0,
+    "false_negative_rate_fnr": 0.0
+  },
+  "confusion_matrix": {
+    "true_positives_tp": 24,
+    "true_negatives_tn": 24,
+    "false_positives_fp": 0,
+    "false_negatives_fn": 0
+  },
+  "real_time_system_performance": {
+    "avg_inference_latency_ms": 4.78,
+    "p95_inference_latency_ms": 5.35,
+    "audio_processing_latency_ms": 12.41,
+    "end_to_end_latency_ms": 17.19,
+    "cpu_usage_pct": 7.5,
+    "memory_usage_mb": 145.2,
+    "throughput_windows_per_sec": 58.2,
+    "detection_delay_seconds": 3.0
+  }
+}

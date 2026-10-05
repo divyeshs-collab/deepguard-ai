@@ -1,0 +1,19 @@
+{
+  "sample_rate": 16000,
+  "window_seconds": 3.0,
+  "hop_seconds": 1.0,
+  "window_samples": 48000,
+  "feature_representation": "Log-Mel Spectrogram",
+  "n_mels": 128,
+  "n_fft": 1024,
+  "hop_length": 256,
+  "win_length": 1024,
+  "expected_shape": [
+    1,
+    1,
+    128,
+    188
+  ],
+  "silence_rms_threshold": 0.005,
+  "normalization": "peak_and_per_window_standardization"
+}

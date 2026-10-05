@@ -1,0 +1,135 @@
+/* DeepGuard AI - Enterprise Light Theme Design System */
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-tertiary: #F1F5F9;
+  --border-light: #E2E8F0;
+  --border-focus: #CBD5E1;
+  --text-main: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --accent-blue: #2563EB;
+  --accent-human: #059669;
+  --accent-suspicious: #D97706;
+  --accent-synthetic: #DC2626;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation tabs */
+.nav-tab.active {
+  background-color: var(--bg-tertiary);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Card State Classes */
+.state-human {
+  border-color: #A7F3D0 !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%) !important;
+}
+.state-human #detection-main-icon {
+  background-color: #DCFCE7 !important;
+  color: #15803D !important;
+}
+.state-human #primary-status-text {
+  color: #15803D !important;
+}
+
+.state-suspicious {
+  border-color: #FDE68A !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FEFCE8 100%) !important;
+}
+.state-suspicious #detection-main-icon {
+  background-color: #FEF3C7 !important;
+  color: #B45309 !important;
+}
+.state-suspicious #primary-status-text {
+  color: #B45309 !important;
+}
+
+.state-synthetic {
+  border-color: #FECACA !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FEF2F2 100%) !important;
+}
+.state-synthetic #detection-main-icon {
+  background-color: #FEE2E2 !important;
+  color: #B91C1C !important;
+}
+.state-synthetic #primary-status-text {
+  color: #B91C1C !important;
+}
+
+.state-insufficient {
+  border-color: #E2E8F0 !important;
+  background-color: #FFFFFF !important;
+}
+.state-insufficient #detection-main-icon {
+  background-color: #F1F5F9 !important;
+  color: #64748B !important;
+}
+.state-insufficient #primary-status-text {
+  color: #475569 !important;
+}
+
+/* Timeline pill badges */
+.badge-human {
+  background-color: #DCFCE7;
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+}
+.badge-suspicious {
+  background-color: #FEF3C7;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+}
+.badge-synthetic {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+  border: 1px solid #FECACA;
+}
+.badge-analyzing {
+  background-color: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #DBEAFE;
+}
+.badge-insufficient {
+  background-color: #F1F5F9;
+  color: #475569;
+  border: 1px solid #E2E8F0;
+}
+
+/* Utility animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+.live-pulse {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

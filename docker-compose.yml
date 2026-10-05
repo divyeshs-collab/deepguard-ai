@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  deepguard-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: deepguard-ai:latest
+    container_name: deepguard-sentinel
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - SAMPLE_RATE=16000
+      - WINDOW_SECONDS=3.0
+      - HOP_SECONDS=1.0
+      - CONFIDENCE_THRESHOLD=0.70
+      - SMOOTHING_WINDOW=5
+    volumes:
+      - ./uploads:/app/uploads
+      - ./ml/evaluation:/app/ml/evaluation
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
